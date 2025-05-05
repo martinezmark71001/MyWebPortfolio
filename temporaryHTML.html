@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         /* Navigation bar CSS START*/
+        .navbar-container{
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: gray;
+        }
+        .navbar-layout{
+            display: block;
+            height: 100px;
+            font-size: 1.5rem;
+        }
+        .navbar-content{
+            height: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .navbar-items{
+            text-decoration: none;
+            font-weight: bolder;
+            text-align: center;
+            color: blueviolet;
+        }
+        .navbar-items:hover{
+            text-decoration: underline;
+        }
+    /* Navigation bar CSS END */
+    </style>
 </head>
 <body>
-    
-
-
-    
+    <div class="navbar-container">
+        <div class="navbar-layout">
+            <nav class="navbar-content">
+                <a href="#hero" class="navbar-items">Portfolio</a>
+                <a href="#about" class="navbar-items">About</a>
+                <a href="#skills" class="navbar-items">Skills</a>
+                <a href="#contact" class="navbar-items">Contact</a>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
