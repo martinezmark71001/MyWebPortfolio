@@ -25,6 +25,8 @@
         font-family: 'Courier New', Courier, monospace;
     }
     .navbar-items{
+        padding:10px 20px;
+        border-radius: 50px;
         text-decoration: none;
         font-weight: bolder;
         text-align: center;
@@ -32,7 +34,8 @@
     }
     
     .navbar-items:hover{
-        text-decoration: underline;
+        color: #17252A;
+        background-color: #FEFFFF;
     }
     .minimized .navbar-layout {
         height: 60px;
@@ -56,7 +59,7 @@
 
     /* HERO/HOME CSS START */
     .hero-container{
-        padding-top: 60px;
+        padding-top: 150px;
         height: 600px;
     }
     .hero-item{
@@ -70,20 +73,40 @@
     .hero-image{
         float:right;
         border-radius: 100px;
-        height:300px;
-        width: 300px;
+        height:400px;
+        width: 400px;
     }
     /* HERO/HOME CSS END */
-
+    .page-name{
+        font-size: 2rem;
+    }
     /* ABOUT CSS START*/
     .about-container{
         height: max-content;
         padding-top: 60px;
     }
     .aboutme{
-        font-size: 1.2em;
+        font-size: 2rem;
+    }
+    .aboutMeDescription{
+        font-size: 2rem;
     }
     /* ABOUT CSS END*/
+
+    /* EDUCATION CSS START */
+    .education-layout{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .education-item{
+    } */
+    .school-name{
+        font-size: 1.5rem;
+    }
+    .school-description{
+        font-size: 1.5rem;
+    }
+    /* EDUCATION CSS END */
 
     /* SKILLS CSS START */
     .skills-container{
@@ -100,6 +123,7 @@
     }
     .skills-grouping-name{
         font-weight: bolder;
+        font-size: 1.5rem;
     }  
     .skills-content-group{
         overflow: hidden;
@@ -117,7 +141,7 @@
         
     } */
     .skill-image{
-        height: 100px;
+        height: 80px;
     }
     /* .skill-name{
 
@@ -128,27 +152,47 @@
     .footer-container{
         display:block;
         height: 500px;
+        padding-top: 100px;
 
     }
     .footer-layout{
         display: grid;
         grid-template: 1fr 1fr /1fr;
     }
-    .footer-links{
+    .footer-link-list{
         margin: 0;
-        padding:0;
+        padding: 0;
         display: flex;
         flex-direction: row;
-        gap: 100px;
         list-style-type: none;
         overflow: hidden;
     }
     .footer-individual-links{
+        margin-right: 100px;
+        border-radius: 50px;
+        background-color: #2B7A78;
+    }
+    .footer-individual-links:hover{
+        background-color: #17252A;
+    }
+    
+    .footer-link{
+        display: flex;
+        padding: 0 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
         text-decoration: none;
+        color: #17252A;
+    }
+    .footer-link:hover{
+        color:#FEFFFF;
     }
     .footer-link-logo{
         height: 50px;
         width: 50px;
+        margin-right: 20px;
     }
     /* FOOTER CSS END */
 }
