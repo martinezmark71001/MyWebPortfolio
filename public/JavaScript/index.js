@@ -1,3 +1,4 @@
+// This is part of the navbar minimize animation
 $(function () {
     const navbarContainer = $(".navbar-container");
 
@@ -16,3 +17,19 @@ $(function () {
       navbarContainer.addClass("minimized");
     });
 });
+// this part is for the div scroll into view
+
+function scrollToElement(elementId) {
+    const navbarHeight = $('.navbar-layout').outerHeight();
+    const element = $('#' + elementId);
+    const offsets = element.offset().top - navbarHeight;
+  
+    $('html, body').animate({
+        scrollTop: offsets  
+    }, {
+        duration: 400, 
+        easing: 'swing' 
+    });
+}
+
+scrollToElement("hero");
