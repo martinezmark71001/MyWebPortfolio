@@ -17,6 +17,8 @@ $(function () {
       navbarContainer.addClass("minimized");
     });
 });
+
+
 // this part is for the div scroll into view
 
 function scrollToElement(elementId) {

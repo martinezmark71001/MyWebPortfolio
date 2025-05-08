@@ -3,51 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         /* Navigation bar CSS START*/
-        .navbar-container{
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: gray;
-        }
-        .navbar-layout{
-            display: block;
-            height: 100px;
-            font-size: 1.5rem;
-        }
-        .navbar-content{
-            height: 100%;
-            border: 1px solid red;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .navbar-items{
-            text-decoration: none;
-            font-weight: bolder;
-            text-align: center;
-            color: blueviolet;
-        }
-        .navbar-items:hover{
-            text-decoration: underline;
-        }
-    /* Navigation bar CSS END */
-    </style>
+    <title>Mark Kenneth's Website Portfolio</title>
+    <link rel="stylesheet" href="./public/styles/styles.css">
 </head>
 <body>
     <div class="navbar-container">
         <div class="navbar-layout">
             <nav class="navbar-content">
-                <a href="#hero" class="navbar-items">Portfolio</a>
+                <a href="#hero" class="navbar-items">Home</a>
                 <a href="#about" class="navbar-items">About</a>
-                <a href="#skills" class="navbar-items">Skills</a>
+                <a href="#projects" class="navbar-items">Project</a>
                 <a href="#contact" class="navbar-items">Contact</a>
             </nav>
         </div>
     </div>
+    <div class="main-container">
+        <div class="hero-container" id="hero">
+            <div class="hero-layout">
+                <img class="hero-image" src="./public/images/profilepicture.jpg" alt="Mark Kenneth's Profile Photo">
+                <h1 class="hero-color hero-item">I'm Mark Kenneth,<br> this is my portfolio.</h1>
+                <p class="hero-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatum animi exercitationem nihil quibusdam, amet, fuga earum incidunt id illo perferendis alias. Consequuntur et non esse, hic quo aut quae.</p>
+            </div>
+        </div>
+        <div class="about-container" id="about">
+            <div class="about-layout">
+                <div class="about-item">
+                    <h1 class="page-name">About</h1>
+                    <p class="aboutMeDescription">I'm Mark Kenneth, a graduate from De La Salle University Dasmariñas, where I honed my skills and knowledge in computer science. Im excited to explore new opportunities and see where my passion for creating software and website takes me.</p>
+                </div>
+            </div>
+            <div class="education-layout">
+                <h1 class="page-name">Education</h1>
+                <div class="education-item">
+                    <h3 class="school-name">STI College Dasmariñas</h3>
+                    <p class="school-description">ICT - Mobile App and Web Development</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="school-name">De La Salle University - Dasmariñas</h3>
+                    <p class="school-description">Computer Science with Specialization in Game</p>
+                </div>
+            </div>
+            <div class="skills-layout" id="skills">
+                <h1 class="page-name">Skills</h1>
+                <div class="skills-content-row">
+                    <h3 class="skills-grouping-name">Programming Language</h3>
+                    <ul class="skills-content-group">
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/html-logo.png" alt="html logo png">
+                            <p class="skill-name">HTML</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/css-logo.png" alt="CSS logo png">
+                            <p class="skill-name">CSS</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/javascript-logo.png" alt="JavaScript logo png">
+                            <p class="skill-name">JavaScript</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/python-logo.png" alt="Python logo png">
+                            <p class="skill-name">Python</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/java-logo.png" alt="Java logo png">
+                            <p class="skill-name">Java</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/c-sharp-logo.png" alt="C# logo png">
+                            <p class="skill-name">C#</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/unity-logo.png" alt="Unity logo png">
+                            <p class="skill-name">Unity C#</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/sql-logo.png" alt="SQL logo png">
+                            <p class="skill-name">SQL</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-content-row">
+                    <h3 class="skills-grouping-name">Framework & Tools</h3>
+                    <ul class="skills-content-group">
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/Dotnet-logo.png" alt=".Net logo png">
+                            <p class="skill-name">.NET Framework</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/aspnet-logo.png" alt="ASP.NET logo png">
+                            <p class="skill-name">ASP.NET</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/ef-logo.png" alt="Entity Framework logo png">
+                            <p class="skill-name">Entity Framework</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/restful-api-logo.png" alt="RESTful API logo png">
+                            <p class="skill-name">RESTful API</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/nodejs-logo.png" alt="NodeJs logo png">
+                            <p class="skill-name">NodeJs</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/express-logo.png" alt="ExpressJs logo png">
+                            <p class="skill-name">ExpressJs</p>
+                        </li>
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/unity-logo.png" alt="Unity logo png">
+                            <p class="skill-name">Unity</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-content-row">
+                    <h3 class="skills-grouping-name">Database Management System</h3>
+                    <ul class="skills-content-group">
+                        <li class="skills-content-individual">
+                            <img class="skill-image" src="./public/images/microsoft-sql-server-logo.png" alt="Microsoft SQL Server logo png">
+                            <p class="skill-name">Microsoft SQL Server</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="project-container" id="projects">
+            <div class="project-layout">
+                
+            </div>
+        </div>
+        <div class="footer-container" id="contact">
+            <footer class="footer-layout">
+                <ul class="footer-link-list"><!--reason why this isn't a list cuz I can control the spacing more properly-->
+                    <li class="footer-individual-links">
+                        <a href="https://www.linkedin.com/in/mark-kenneth-martinez/" target="_blank" class="footer-link">
+                            <img src="./public/images/linkedin-logo.png" alt="LinkedIn Logo" class="footer-link-logo">
+                            <h3 class="link-text">LinkedIn</h3>
+                        </a>
+                    </li>
+                    <li class="footer-individual-links">
+                        <a href="mailto:markkennethmartinez123@outlook.com" class="footer-link">
+                            <img src="./public/images/microsoft-outlook-logo.png" alt="Microsoft Outlook Logo" class="footer-link-logo">
+                            <h3 class="link-text">Outlook</h3>
+                        </a>
+                    </li>
+                    <li class="footer-individual-links">
+                        <a href="tel:+639672737872" class="footer-link">
+                            <img src="./public/images/phone-number.png" alt="Call Logo" class="footer-link-logo">
+                            <h3 class="link-text">Mobile Number</h3>
+                        </a>
+                    </li> 
+                </ul>
+                <p>© Mark Kenneth L. Martinez</p>
+            </footer>
+        </div>
+    </div>
+    <script src="./public/JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="./public/JavaScript/index.js"></script>
 </body>
 </html>

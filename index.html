@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./public/styles/styles.css">
 </head>
 <body>
-    <div class="navbar-container">
-        <div class="navbar-layout">
-            <nav class="navbar-content">
-                <a href="#hero" class="navbar-items">Home</a>
-                <a href="#about" class="navbar-items">About</a>
-                <a href="#projects" class="navbar-items">Project</a>
-                <a href="#contact" class="navbar-items">Contact</a>
-            </nav>
-        </div>
-    </div>
     <div class="main-container">
+        <div class="navbar-container">
+            <div class="navbar-layout">
+                <nav class="navbar-content">
+                    <a href="#hero" class="navbar-items">Home</a>
+                    <a href="#about" class="navbar-items">About</a>
+                    <a href="#projects" class="navbar-items">Project</a>
+                    <a href="#contact" class="navbar-items">Contact</a>
+                </nav>
+            </div>
+        </div>
         <div class="hero-container" id="hero">
             <div class="hero-layout">
                 <img class="hero-image" src="./public/images/profilepicture.jpg" alt="Mark Kenneth's Profile Photo">
@@ -127,11 +127,41 @@
             </div>
         </div>
         <div class="project-container" id="projects">
+            <h1 class="page-name">Projects</h1>
             <div class="project-layout">
-                
+                <div class="individual-project">
+                    <img src="./public/images/epitome-of-element.png" alt="The Epitome of Element Image" class="project-image">
+                    <h1 class="project-name">The Epitome of Elements</h1>
+                    <p class="project-description">The Epitome of Elements is a school project created with my groupmates/friends dedicated to improving typing skills of the user while enjoying a game using a 2D isometric game.</p>
+                    <a href="https://github.com/LearnerRepo/Epitome-of-Elements.git" class="project-link">Clone Github Repository</a>
+                </div>
+                <div class="individual-project">
+                    <img src="./public/images/dotnet-certificate.jpg" alt="C# .NET with MS SQL Complete Beginner to Master 2024 Certificate Image" class="project-image">
+                    <h1 class="project-name">C# .NET with MS SQL Complete Beginner to Master 2024</h1>
+                    <p class="project-description">This project was created as part of the C# .NET with MS SQL Complete Beginner to Master 2024 at Udemy, where I explored API design, database modeling, and security best practices.</p>
+                    <a href="https://github.com/LearnerRepo/Epitome-of-Elements.git" class="project-link">Clone Github Repository</a>
+                </div>
+                <div class="individual-project">
+                    <img src="./public/images/epitome-of-element.png" alt="The Epitome of Element Image" class="project-image">
+                    <h1 class="project-name">The Epitome of Elements</h1>
+                    <p class="project-description">The Epitome of Elements is a school project created with my groupmates/friends dedicated to improving typing skills of the user while enjoying a game using a 2D isometric game.</p>
+                    <a href="https://github.com/LearnerRepo/Epitome-of-Elements.git" class="project-link">Clone Github Repository</a>
+                </div>
             </div>
         </div>
-        <div class="footer-container" id="contact">
+        <div class="contact-container" id="contact">
+            <div class="contact-form-layout">
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <button type="submit">Send</button>
+                    <div id="form-response"></div>
+                  </form>
+            </div>
             <footer class="footer-layout">
                 <ul class="footer-link-list"><!--reason why this isn't a list cuz I can control the spacing more properly-->
                     <li class="footer-individual-links">
