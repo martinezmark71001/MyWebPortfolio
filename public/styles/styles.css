@@ -2,6 +2,7 @@
     body{
         padding: 0;
         margin: 0;
+        background-image: linear-gradient(to bottom, #003135, #AFDDE5); /* #2B7A78  #17252A*/
     }
     
     /* Main Container START*/
@@ -12,7 +13,6 @@
         justify-content: center;
         font-family: 'Times New Roman', Times, serif;
         color: #964734;
-        background-image: linear-gradient(to bottom, #003135, #AFDDE5); /* #2B7A78  #17252A*/
     }
     /* Main Container END */
 
