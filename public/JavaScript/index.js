@@ -35,3 +35,5 @@ function scrollToElement(elementId) {
 }
 
 scrollToElement("hero");
+
+// This part is for the form
